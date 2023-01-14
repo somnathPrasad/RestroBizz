@@ -12,9 +12,12 @@ function BottomNavElement({ title, icon, href, isActive }: IBottomNavElement) {
     return (
         <Link href={href} className={`w-full`}>
             <div className={`py-3 w-full border-x-[1px] items-center justify-center flex ${isActive ? "rounded-t-2xl shadow-lg drop-shadow-2xl -translate-y-3" : "rounded-t-sm"} bg-white transition ease-in-out`}>
-                {icon ? <span className="material-symbols-rounded text-4xl">
-                    {icon}
-                </span> :
+                {icon ? <div>
+                    <span className="material-symbols-rounded text-4xl">
+                        {icon}
+                    </span>
+                    <p className='text-xs text-slate-400 text-center'>{title}</p>
+                </div> :
                     <p className="font-medium text-2xl text-center">{title}</p>
                 }
             </div>
