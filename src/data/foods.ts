@@ -1,0 +1,164 @@
+export type food = {
+  name: string;
+  image: string;
+  description: string;
+  id: string;
+  price:string;
+};
+
+const FOODS: food[] = [
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "2",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "2",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "3",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "4",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "5",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "6",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "7",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "8",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "9",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "10",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "11",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "12",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "13",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "14",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "15",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "16",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "17",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "18",
+    price:"199"
+  },
+  {
+    name: "Kadhai Paneer",
+    image: "https://picsum.photos/200",
+    description:
+      "likes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from",
+    id: "19",
+    price:"199"
+  },
+];
+
+export default FOODS;
