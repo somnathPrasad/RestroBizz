@@ -18,7 +18,6 @@ const RemoveButton = () => {
 }
 
 export default function FoodCard({ food }: { food: food }) {
-    console.log(food)
     return (
         <div className="px-3 py-3 my-5 bg-white border rounded-md shadow-lg border-slate-300">
             <div
@@ -27,7 +26,7 @@ export default function FoodCard({ food }: { food: food }) {
                 <div className="w-full h-full mr-5 rounded-md">
                     {food.image &&
                         <Image
-                            alt={food.name}
+                            alt={food.title}
                             src={food.image}
                             width={150}
                             height={150}

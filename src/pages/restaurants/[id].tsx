@@ -8,7 +8,6 @@ import { useRouter } from "next/router";
 
 export default function Restaurant() {
     const { id } = useRouter().query;
-    console.log(id)
     const { data: foods, isLoading, isError, error } = useFoods(id);
     return (
         <main className="flex flex-col items-center justify-center">

@@ -3,7 +3,6 @@ import prisma from '@/lib/prisma';
 
 async function handleGetFoods(req: NextApiRequest, res: NextApiResponse) {
   const { restroId } = req.query;
-  console.log(restroId);
   if (typeof restroId === 'number' || typeof restroId === 'string') {
     const result = await prisma.foods.findMany({
       where: { restroId: parseInt(restroId) },
