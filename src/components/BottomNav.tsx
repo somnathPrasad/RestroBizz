@@ -9,8 +9,10 @@ interface IBottomNavElement {
 }
 
 function BottomNavElement({ title, icon, href, isActive }: IBottomNavElement) {
+    const router = useRouter();
+    const hidden = !router.pathname.startsWith("/Restaurant/")
     return (
-        <Link href={href} className={`w-full`}>
+        <Link href={href} className={`w-full ${hidden && "hidden"}`}>
             <div className={`py-3 w-full border-x-[1px] items-center justify-center flex ${isActive ? "rounded-t-2xl shadow-lg drop-shadow-2xl -translate-y-3" : "rounded-t-sm"} bg-white transition ease-in-out`}>
                 {icon ? <div>
                     <span className="material-symbols-rounded text-4xl">

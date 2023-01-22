@@ -1,7 +1,6 @@
-import config from "../../config";
-
-const fetchFoods = async () => {
-  const res = await fetch(`${config.api_base_url}/foods`);
+const fetchFoods = async ({ queryKey }: { queryKey: (string | number)[] }) => {
+  const restroId = queryKey[1];
+  const res = await fetch(`/api/foods?restroId=${restroId}`);
   return res.json();
 };
 

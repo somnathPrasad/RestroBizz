@@ -1,7 +1,15 @@
-export default function MenuTopBar() {
+import Link from "next/link";
+import { useRouter } from "next/router";
+
+export default function MenuTopBar({ title = "Menu" }) {
+    const router = useRouter();
+    const restroId = router.asPath.split("/")[2];
     return (
-        <div className='w-full py-4 bg-red-600 text-center border-b border-slate-400 shadow-slate-300 shadow-2xl rounded-b-md fixed top-0 left-0 right-0'>
-            <p className='text-3xl font-medium text-slate-100'>MENU</p>
+        <div className="fixed top-0 left-0 right-0 w-full py-4 text-center border border-b border-gray-200 shadow-2xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 shadow-slate-300">
+            <p className='text-3xl font-medium'> {title}
+            </p>
+            {title === "Restro Bizz" && <Link href={"/restaurants/add"} className="">🔗Add restaurants →</Link>}
+            {title === "Menu" && <Link href={`/foods/${restroId}/add`} className="italic">Add food items to menu</Link>}
         </div>
     )
 }

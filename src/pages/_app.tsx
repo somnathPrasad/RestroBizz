@@ -8,6 +8,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from 'react-query'
+import { NotificationProvider } from '@/context/NotificationProvider';
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -20,10 +21,12 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
-        <div className={`${montserrat.variable} font-montserrat w-screen h-full pb-20`}>
-          <Component {...pageProps} />
-          <BottomNav />
-        </div>
+        <NotificationProvider>
+          <div className={`${montserrat.variable} font-montserrat w-screen h-full pb-20`}>
+            <Component {...pageProps} />
+            <BottomNav />
+          </div>
+        </NotificationProvider>
       </Hydrate>
     </QueryClientProvider>
   )

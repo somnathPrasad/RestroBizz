@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .input {
+    @apply border-2 rounded-md shadow-md text-lg p-3 my-2 focus:outline-slate-400;
+  }
+  .greenButton {
+    @apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none text-xl mt-5;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
